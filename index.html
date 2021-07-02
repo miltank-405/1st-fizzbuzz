@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>FizzBuzz</title>
+</head>
+
+<body>
+	<script>
+		// 1〜100までの数字出してみる
+		for(var i = 1; i <= 100; i++) {
+
+			// 3と5の倍数はフィズバス
+			if(i % 3 == 0 && i % 5 == 0)
+				console.log("FizzBuzz");
+
+			// 3の倍数はフィズ
+			else if (i % 3 == 0)
+				console.log("Fizz");
+
+			// 5の倍数はバズってる
+			else if (i % 5 == 0)
+				console.log("Buzz");
+			
+			// 3と5の倍数以外はそのまんま数字表示
+			else
+				console.log(i);
+		}
+
+
+
+	</script>
+
+</body>
+</html>
